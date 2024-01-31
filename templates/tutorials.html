@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tutorials</title>
+</head>
+<body>
+<h1>Tutorials</h1>
+<ul>
+{% for tutorial in tutorials %}
+<li>
+<a href="/article/{{ tutorial.id }}">{{ tutorial.title }}</a>
+<p>{{ tutorial.author }}</p>
+</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+---
