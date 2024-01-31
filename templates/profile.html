@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile</title>
+</head>
+<body>
+<h1>Profile</h1>
+<p>
+This is your profile page. Here you can manage your account information,
+view your submissions, and interact with other users.
+</p>
+<ul>
+<li>Username: {{ current_user.username }}</li>
+<li>Email: {{ current_user.email }}</li>
+<li><a href="#">Edit Profile</a></li>
+<li><a href="#">Change Password</a></li>
+<li><a href="/logout">Logout</a></li>
+</ul>
+</body>
+</html>
+
+---
